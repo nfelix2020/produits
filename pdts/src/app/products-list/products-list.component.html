@@ -13,7 +13,7 @@
         <td>{{prod.shopEmail}}</td>
         <td>
             <button class="btn btn-warning m-2"><i class="fa fa-edit"></i></button>
-            <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+            <button class="btn btn-danger" (click)="removeProduct(prod.id)" ><i class="fa fa-trash"></i></button>
         </td>
       </tr>
     </tbody>

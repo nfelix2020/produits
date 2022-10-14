@@ -29,7 +29,13 @@ export class ProductsListComponent implements OnInit {
 
    this.productService.getAllProducts().subscribe((data=>{
     this.allProducts=data
-   }))
-      
+   }))     
+  }
+
+  removeProduct(pdtId: number){
+    this.productService.deleteProduct(pdtId).subscribe(produit=>{
+      console.log('removed product', produit)
+    })
+    this.getAllProducts(); //redirect to the list of products after deleting a product
   }
 }

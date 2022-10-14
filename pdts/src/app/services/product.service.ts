@@ -21,8 +21,16 @@ export class ProductService {
     );
   }
 
-
-
+  // Create a new product
 
   
+
+//remove a product
+
+deleteProduct(productId: number){
+  return this.http.delete(`${this.serverUrl}/${productId}`)
+}
+
+
+
 }
