@@ -7,12 +7,17 @@ import { ProductsListComponent } from './products-list/products-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { DataService } from './services/data.service';
 import { HttpClientModule } from '@angular/common/http';
-
+import { CreateProductComponent } from './create-product/create-product.component';
+import { ProductNotFoundComponent } from './product-not-found/product-not-found.component';
+ 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsListComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    CreateProductComponent,
+    ProductNotFoundComponent,
+   
   ],
   imports: [
     BrowserModule,
