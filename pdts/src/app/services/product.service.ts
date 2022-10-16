@@ -23,7 +23,9 @@ export class ProductService {
 
   // Create a new product
 
-  
+  createProduct(product: Product): Observable<any>{
+   return this.http.post(`${this.serverUrl}`, product);
+  }
 
 //remove a product
 

@@ -9,6 +9,7 @@ import { DataService } from './services/data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CreateProductComponent } from './create-product/create-product.component';
 import { ProductNotFoundComponent } from './product-not-found/product-not-found.component';
+import { FormsModule } from '@angular/forms';
  
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ProductNotFoundComponent } from './product-not-found/product-not-found.
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(DataService),
   ],
